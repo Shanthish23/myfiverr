@@ -21,7 +21,7 @@ const connect=async()=>{
 }
 
 app.use(cors({
-    origin: 'http://localhost:5173', // Set your frontend URL here
+    origin: 'https://myfiverr-3b2c-8n6kg9yys-shanthishs-projects.vercel.app/', // Set your frontend URL here
     credentials: true,  // Allows cookies to be sent across domains
   }));
 app.use(express.json())//only by this db accpets data from user
