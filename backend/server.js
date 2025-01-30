@@ -22,7 +22,9 @@ const connect=async()=>{
 
 app.use(cors({
     origin: 'https://myfiverr-3b2c-8n6kg9yys-shanthishs-projects.vercel.app/', // Set your frontend URL here
-    credentials: true,  // Allows cookies to be sent across domains
+    credentials: true, 
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization']// Allows cookies to be sent across domains
   }));
 app.use(express.json())//only by this db accpets data from user
 app.use(cookieParser())
