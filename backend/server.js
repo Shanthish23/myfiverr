@@ -13,7 +13,7 @@ const app=express()
 
 const connect=async()=>{
     try{
-    await mongoose.connect("mongodb://localhost:27017/fiverr")
+    await mongoose.connect("mongodb+srv://siddharth:3102@demo.vlkwr.mongodb.net/?retryWrites=true&w=majority&appName=demo")
     console.log("Connected to database")
 }catch(error){
     console.log(error)
